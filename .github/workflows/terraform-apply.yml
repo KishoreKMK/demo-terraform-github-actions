@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      
 
 env:
   TF_CLOUD_ORGANIZATION: "Project-One-One"
@@ -43,3 +44,4 @@ jobs:
         with:
           run: ${{ steps.apply-run.outputs.run_id }}
           comment: "Apply Run from GitHub Actions CI ${{ github.sha }}"
+
